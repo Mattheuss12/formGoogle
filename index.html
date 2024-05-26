@@ -1,40 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Reserva</title>
+  <title>Formulário Mirante</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <form id="reservationForm">
-    <label>Quantas pessoas para a mesa?</label>
-    <br>
-    <input type="radio" id="umaPessoa" name="qtdMesa" value="Uma pessoa">
-    <label for="umaPessoa">uma Pessoa</label>
-    <br>
-    <input type="radio" id="duasPessoas" name="qtdMesa" value="Duas Pessoas">
-    <label for="duasPessoas">duas Pessoas</label>
-    <br>
-    <input type="radio" id="tresPessoas" name="qtdMesa" value="Tres Pessoas">
-    <label for="tresPessoas">tres Pessoas</label>
-    <br>
-    <br>
-    <label for="garcom">Qual garcom atendendo?</label>
-    <br>
-    <select name="garcom" id="garcom">
-      <option value="">Selecione uma opcao</option>
-      <option value="Garcom 1">Garcom 1</option>
-      <option value="Garcom 2">Garcom 2</option>
-      <option value="Garcom 3">Garcom 3</option>
-    </select>
-    <br>
-    <br>
-    <button type="submit" id="submitBtn">Enviar</button>
-    <input type="reset">
-  </form>
-  <script src="script.js"></script>
+  <div class="button-container">
+    <img src="./assets/logoMirante.png" alt="Logo" class="logo">
+    <a href="./form.html"><button class="custom-button">INICIAR PESQUISA</button></a>
+    <a href="./qrcode.html"><button class="custom-button">AVALIAÇÃO TRIPADVISOR</button></a>
+  </div>
 </body>
-
 </html>

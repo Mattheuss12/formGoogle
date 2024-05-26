@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Reserva</title>
+  <link rel="stylesheet" href="styleForm.css">
+</head>
+
+<body>
+  <a href="./index.html" class="back-button">&lt;</a>
+  <img id="profilePic" src="./assets/pratoForm.png" alt="Foto de perfil">
+  <div class="container">
+  
+    <form id="reservationForm">
+      <div class="form-group">
+        <label for="name">Qual seu nome?</label><br>
+        <input type="text" id="name" name="name" placeholder="Ex: Jon Smith" required>
+      </div>
+      
+      <div class="form-group" id="radioForm">
+        <label>É sua primeira vez aqui?</label><br><br>
+        <input type="radio" id="yes" name="firstTime" value="Sim">
+        <label for="yes">Sim</label>
+        <input type="radio" id="no" name="firstTime" value="Não">
+        <label for="no">Não</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="preference">Qual a sua preferência de prato?</label><br>
+        <input type="text" id="preference" name="preference" placeholder="Ex: Camarão cremoso" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="avaliation">O que está achando do prato?</label><br>
+        <input type="text" id="avaliation" name="avaliation" placeholder="Informe elogios ou críticas">
+      </div>
+     
+      <div class="form-group">
+        <label for="dessert">Que tal uma sobremesa?</label><br>
+        <input type="text" id="dessert" name="dessert" placeholder="informe a sobremesa escolhida">
+      </div>
+      
+      <div class="form-group">
+        <label for="contact">Informe seu @ ou contato</label><br>
+        <input type="text" id="contact" name="contact" placeholder="Para envio de promoções">
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submitBtn">ENVIAR PESQUISA</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <p>Formulário enviado com sucesso!</p>
+      <img src="./assets/formSucess.gif" alt="GIF de confirmação" class="confirmation-gif">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

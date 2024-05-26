@@ -1,0 +1,76 @@
+body {
+  position: relative;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background-image: url("./assets/BgQrcode.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18, 178, 140, 0.6), rgba(18, 178, 140, 0));
+  z-index: -1;
+}
+
+.back-button {
+  width: 32px;
+  height: 32px; 
+  position: absolute;
+  top: -130px;
+  left: 20px;
+  color: white;
+  font-size: 24px; 
+  font-weight: bold;
+  text-decoration: none; 
+  z-index: 3; 
+}
+
+.qrCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  margin-top: 140px;
+  border-radius: 40px;
+}
+
+.qrCode-content {
+  margin-bottom: 7.5rem;
+  text-align: center;
+}
+
+.qrCode-content img {
+  width: 331px;
+  height: 331px;
+}
+
+.qrCode-text {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.qrCode-logo-container img {
+  width: 165px;
+  height: 93px;
+}
+
+@media only screen and (max-width: 425px) {
+  .qrCode-content #qrCode {
+    width: 296px;
+    height: 292px;
+  }
+
+  .qrCode-text {
+    font-size: 16px;
+  }
+}
