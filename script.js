@@ -13,7 +13,7 @@ document.getElementById("reservationForm").addEventListener("submit", function (
     contact: document.getElementById("contact").value
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbwgbvzRH8lbYf1pteTs0mbY8l_NVEZ3918K-qBRzhbAd88Y-UBdX9ZRaLc_S5rTwMtOgQ/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbzlgVpF0bLehmf2NYYd4G3LByAAkesX136HsyFQLYO_jIo5sCjv7e6YNlxjsegApJ4XlA/exec", {
     method: "POST",
     body: JSON.stringify(formData),
   })
